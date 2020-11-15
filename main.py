@@ -1,4 +1,5 @@
 from node import Node
+from linkedlist import Linked
 
 print("Welcome to the linked list program!")
 
@@ -7,8 +8,8 @@ second_node = Node(42)
 
 first_node.set_next(second_node)
 
-iter = first_node
-while (iter != None):
-    print(iter.get_value())
+myList = Linked()
+myList.insert(first_node)
+myList.insert(second_node)
 
-    iter = iter.get_next()
+myList.print_all_nodes()
